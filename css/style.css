@@ -286,3 +286,58 @@ section#resume {
     background-color: #D1D1D1;
     border: none;
 }
+
+/* ===============
+Footer Section
+================== */
+footer {
+    background-color: var(--bg-color);
+    padding: 130px 0;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content .column {
+    flex-basis: 50%;
+}
+
+.footer-content .column h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.footer-content .column p {
+    font-size: 16px;
+}
+
+.footer-content .column .social-links {
+    margin-top: 30px;
+}
+
+.footer-content .column input:not(input[type="submit"]),
+.footer-content .column textarea {
+    display: block;
+    width: 100%;
+    padding: 18px 30px;
+    margin-bottom: 25px;
+    border: none;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text-color);
+    resize: none;
+}
+
+.footer-content .column input::placeholder,
+.footer-content .column textarea::placeholder {
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-content .column input:focus,
+.footer-content .column textarea:focus {
+    outline: none;
+
+}
