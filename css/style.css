@@ -23,16 +23,25 @@ body {
 
 p {
     line-height: 30px;
-
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
 
 .container {
-    min-width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -78,11 +87,14 @@ header {
     background: url(../image/hardy.png) no-repeat calc(100% - 40px) 100%, url(../image/header_bg.png) no-repeat bottom right, url(../image/developer.png) no-repeat center left, var(--bg-color);
 }
 
+header .container {
+    height: 100%;
+}
+
 .logo h1 {
     text-transform: capitalize;
     font-size: 45px;
     font-weight: 800;
-    color: var(--secondary-color);
 }
 
 .logo h1 span {
@@ -145,7 +157,6 @@ header {
 .banner-content h1 {
     font-size: 85px;
     font-weight: 700;
-    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
@@ -156,4 +167,39 @@ header {
 .banner-btn {
     display: flex;
     gap: 30px;
+}
+
+/* ==============
+About Section
+================= */
+.about-content {
+    padding: 130px 150px;
+    margin: 130px 0;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content h4 {
+    font-size: 20px;
 }
